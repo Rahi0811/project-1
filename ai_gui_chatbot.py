@@ -2,7 +2,7 @@ import tkinter as tk
 from openai import OpenAI
 
 # ✅ Create OpenAI client
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def send_message():
     user_msg = entry_box.get().strip()
@@ -48,3 +48,4 @@ send_button.place(x=315, y=420, height=40, width=90)
 window.bind("<Return>", lambda event: send_message())
 
 window.mainloop()
+
